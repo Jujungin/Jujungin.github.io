@@ -45,8 +45,8 @@ body {
 
 
 .avatar {
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: 363px;
     border-radius: 12px;
     object-fit: cover;
     display: block;
@@ -73,7 +73,7 @@ h1 {
 
 .info {
     margin-top: 8px;
-    font-size: 14px;
+    font-size: 11px;
     color: #d1d5db
 }
 
@@ -85,9 +85,13 @@ h1 {
     letter-spacing: 0.06em
 }
 
+.info_link {
+    font-size: 11px;
+}
 .info_link a {
     color: var(--accent);
-    text-decoration: none
+    text-decoration: none;
+    font-size: 11px
 }
 
 .chip {
@@ -121,14 +125,15 @@ h1 {
 
 .topbar-note {
     color: var(--muted);
-    font-size: 13px
+    font-size: 11px
 }
 
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 18px
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 18px;
+    margin-bottom: 36px
 }
 
 
@@ -174,7 +179,7 @@ h1 {
 }
 
 .card p {
-    margin: 0;
+    margin: 15px 0 0;
     color: var(--muted);
     font-size: 14px
 }
