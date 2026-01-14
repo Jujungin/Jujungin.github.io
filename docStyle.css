@@ -1,0 +1,43 @@
+.container {
+    max-width: var(--max-width);
+    margin: 60px auto;
+    padding: 32px;
+    background: var(--card);
+    border-radius: 16px;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    color: var(--accent);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+th, td {
+    border: 1px solid #2f333a;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #bfc5cf;
+    color: #272525;
+    font-weight: 600;
+    border-bottom: 2px solid #252525;
+}
+
+
+pre {
+    background: #dcdfe4;
+    padding: 16px;
+    border-radius: 12px;
+    overflow-x: auto;
+}
+
+code {
+    color: #363738;
+}
