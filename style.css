@@ -15,7 +15,7 @@
 body {
     margin: 0;
     background: var(--bg);
-    color: #e5e7eb
+    color: #e5e7eb;
 }
 
 
@@ -60,14 +60,14 @@ h1 {
     font-size: 20px;
     margin: 6px 0 0;
     text-align: center;
-    color: #fff
+    color: #fff;
 }
 
 .subtitle {
     text-align: center;
     color: var(--muted);
     font-size: 14px;
-    margin-top: 4px
+    margin-top: 4px;
 }
 
 
