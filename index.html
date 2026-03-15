@@ -37,6 +37,24 @@
 
 
         <main class="main">
+
+            <div class="topbar">
+                <h2>AWS S3 + Databricks</h2>
+                <div class="topbar-note">이미지를 클릭하면 새 탭으로 열립니다</div>
+            </div>
+
+            <article class="card">
+                    <a href="/viewerD.html?file=Databricks-Taxi-Data-Pipeline-Project.md">
+                        <div class="meta">
+                            <div class="title">AWS S3 + Databricks 01 </div>
+                            <div class="link">Documents</div>
+                        </div>
+                        <p>Taxi Data Pipeline Project</p>
+                    </a>
+            </article>
+
+            <br></br>
+
             <div class="topbar">
                 <h2>데이터 분석</h2>
                 <div class="topbar-note">이미지를 클릭하면 새 탭으로 열립니다</div>
@@ -91,8 +109,7 @@
                         <p>알고리즘 하드코딩 해보기</p>
                     </a>
                 </article>
-            </section>
-
+            <!-- </section> -->
 
             <br></br>
 
@@ -121,5 +138,18 @@
         </main>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
+<div id="content"></div>
+
+<script>
+const params = new URLSearchParams(location.search);
+const file = params.get("file");
+
+fetch(`/source/${file}`)
+  .then(res => res.text())
+  .then(text => {
+      document.getElementById("content").innerHTML = marked.parse(text);
+  });
+</script>
 </html>
