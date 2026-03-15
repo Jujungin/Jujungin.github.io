@@ -23,8 +23,9 @@
                 <div>대학교 졸업 (4년제) 컴퓨터공학과</div>
 
                 <h3>연락</h3>
-                <div class="info_link">이메일 : <a href="mailto:wjddls0119@gmail.com">wjddls0119@gmail.com</a></div>
-                <div class="info_link">깃허브 : <a href="https://github.com/Jujungin" target="_blank">github.com/Jujungin</a></div>                
+                <div class="info_link">이메일: <a href="mailto:wjddls0119@gmail.com">wjddls0119@gmail.com</a></div>
+                <div class="info_link">깃허브: <a href="https://github.com/Jujungin"
+                        target="_blank">github.com/Jujungin</a></div>
 
                 <h3>자격증</h3>
                 <div class="chip">ADsP</div>
@@ -44,13 +45,13 @@
             </div>
 
             <article class="card">
-                    <a href="/viewerD.html?file=Databricks-Taxi-Data-Pipeline-Project.md">
-                        <div class="meta">
-                            <div class="title">AWS S3 + Databricks 01 </div>
-                            <div class="link">Documents</div>
-                        </div>
-                        <p>Taxi Data Pipeline Project</p>
-                    </a>
+                <a href="/viewerD.html?file=Databricks-Taxi-Data-Pipeline-Project.md">
+                    <div class="meta">
+                        <div class="title">AWS S3 + Databricks 01 </div>
+                        <div class="link">Documents</div>
+                    </div>
+                    <p>Taxi Data Pipeline Project</p>
+                </a>
             </article>
 
             <br></br>
@@ -83,13 +84,13 @@
                     </a>
                 </article>
 
-            <!-- --- -->
-            <br></br>
+                <!-- --- -->
+                <br></br>
 
-            <div class="topbar">
-                <h2>DSA 정리</h2>
-                <div class="topbar-note">새 탭으로 열립니다</div>
-            </div>
+                <div class="topbar">
+                    <h2>DSA 정리</h2>
+                    <div class="topbar-note">새 탭으로 열립니다</div>
+                </div>
                 <article class="card">
                     <a class="project-link" href="/docDS.html" target="_blank">
                         <div class="meta">
@@ -109,14 +110,14 @@
                         <p>알고리즘 하드코딩 해보기</p>
                     </a>
                 </article>
-            <!-- </section> -->
+                <!-- </section> -->
 
-            <br></br>
+                <br></br>
 
-            <div class="topbar">
-                <h2>게임</h2>
-                <div class="topbar-note">새 탭으로 열립니다</div>
-            </div>
+                <div class="topbar">
+                    <h2>게임</h2>
+                    <div class="topbar-note">새 탭으로 열립니다</div>
+                </div>
                 <article class="card">
                     <a class="project-link" href="https://jujungin.github.io/randompages/" target="_blank">
                         <!-- <img src="https://via.placeholder.com/600x400.png?text=Project+3" alt="프로젝트3 스크린샷"> -->
@@ -134,22 +135,9 @@
                 <div class="topbar-note">이미지를 클릭하면 새 탭으로 열립니다</div>
             </div> -->
 
-           
+
         </main>
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-<div id="content"></div>
-
-<script>
-const params = new URLSearchParams(location.search);
-const file = params.get("file");
-
-fetch(`/source/${file}`)
-  .then(res => res.text())
-  .then(text => {
-      document.getElementById("content").innerHTML = marked.parse(text);
-  });
-</script>
 </html>
